@@ -2,7 +2,7 @@
 
 This repository is a part of [OpenM++](http://www.openmpp.org/) open source microsimulation platform. It contain examples how to prepare input data, run the model and process results using Python.
 
-Please keep in mind, it is an examples only and some important details, like error handling, intentionally omitted. It is necessary to add `try ... except` if want to use it in production.
+Please keep in mind, it is an examples only and some important details, like error handling, intentionally omitted. It is highly recommended to use `try ... except` in production code.
 
 For more information visit our [wiki](http://www.openmpp.org/wiki/) or e-mail to: _openmpp dot org at gmail dot com_.
 
