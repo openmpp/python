@@ -35,10 +35,10 @@ import matplotlib.pyplot as plt
 mortalityData = [0.014 + i * 0.005 for i in range(20)]
 
 # Use openM++ oms web-service to run NewCaseBased model 20 times
-# with different values of MortalityHazard parameter.
-# It is the same as command line:
-#   NewCaseBased.exe -OpenM.ProgressPercent 100 -Parameter.MortalityHazard 0.014
-#   NewCaseBased.exe -OpenM.ProgressPercent 100 -Parameter.MortalityHazard 0.019
+# with different values of MortalityHazard parameter:
+#
+# NewCaseBased.exe -OpenM.ProgressPercent 100 -OpenM.SubValues 16 OpenM.Threads 4 -Parameter.MortalityHazard 0.014
+# NewCaseBased.exe -OpenM.ProgressPercent 100 -OpenM.SubValues 16 OpenM.Threads 4 -Parameter.MortalityHazard 0.019
 #   .... and 18 more mortality hazard values ....
 #
 # For each request to run the model web-service respond with JSON containing RunStamp
@@ -51,7 +51,9 @@ for m in mortalityData:
         'ModelName': 'NewCaseBased',
         'Opts': {
             'Parameter.MortalityHazard': str(m),
-            'OpenM.ProgressPercent': '100'
+            'OpenM.ProgressPercent': '100',     # reduce amount of progress messages in the log file
+            'OpenM.SubValues': '16',            # use 16 sub-values (sub-samples)
+            'OpenM.Threads': '4'                # use 4 modeling threads
         }
     }
     #
