@@ -26,7 +26,7 @@ As result `oms` web-service will start to listen incoming requests on `http://lo
 
 **NewCaseBased** model:  loop over MortalityHazard parameter to analyze DurationOfLife output value.
 
-![Example of NewCaseBased model run.](https://github.com/openmpp/python/blob/master/images/openmpp_Python_life_vs_mortality_20200505.png "Example of NewCaseBased model run.")
+![Example of NewCaseBased model run.](/images/openmpp_Python_life_vs_mortality_20200505.png "Example of NewCaseBased model run.")
 
 **RiskPaths** model: analyze contribution of delayed union formations versus decreased fertility on childlessness.
 
