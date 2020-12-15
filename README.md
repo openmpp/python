@@ -32,3 +32,4 @@ As result `oms` web-service will start to listen incoming requests on `http://lo
 
 ![Example of RiskPaths model run.](/images/openmpp_Python_riskpaths_childlessness_20200505.png "Example of RiskPaths model run.")
 
+**License:** MIT.
