@@ -4,7 +4,7 @@ This repository is a part of [OpenM++](http://www.openmpp.org/) open source micr
 
 Please keep in mind, it is an examples only and some important details, like error handling, intentionally omitted. It is highly recommended to use `try ... except` in production code.
 
-For more information visit our [wiki](http://www.openmpp.org/wiki/) or e-mail to: _openmpp dot org at gmail dot com_.
+For more information visit our [wiki](https://github.com/openmpp/openmpp.github.io/wiki) or e-mail to: _openmpp dot org at gmail dot com_.
 
 ## Prerequisites
 
@@ -20,7 +20,8 @@ Linux / MacOS:
 cd ~/my-openmpp-release
 bin/oms
 ```
-As result `oms` web-service will start to listen incoming requests on `http://localhost:4040` and Python script will do all actions using [oms web-service API](https://ompp.sourceforge.io/wiki/index.php/Oms_web_service_API).
+As result `oms` web-service will start to listen incoming requests on `http://localhost:4040` and Python script will
+do all actions using [oms web-service API](https://github.com/openmpp/openmpp.github.io/wiki/Oms-web-service-API).
 
 ## Screenshots
 
