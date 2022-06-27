@@ -42,15 +42,15 @@ rsp.raise_for_status()
 firstRunStatus = rsp.json()
 firstRunDigest = rsp.json()['RunDigest']
 
-rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/AgeBaselineForm1/value')
+rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/AgeBaselineForm1/value/start/0/count/0')
 rsp.raise_for_status()
 ageFirstUnion = rsp.json()
 
-rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/UnionStatusPreg1/value')
+rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/UnionStatusPreg1/value/start/0/count/0')
 rsp.raise_for_status()
 unionStatusPreg = rsp.json()
 
-rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/SimulationCases/value')
+rsp = requests.get('http://127.0.0.1:4040/api/model/RiskPaths/run/' + firstRunDigest + '/parameter/SimulationCases/value/start/0/count/0')
 rsp.raise_for_status()
 simulationCases = rsp.json()
 
