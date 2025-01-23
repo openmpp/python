@@ -8,9 +8,12 @@ For more information visit our [wiki](https://github.com/openmpp/openmpp.github.
 
 Python scripts are using openM++ web-service in order to run the model, modify parameters and read output values. No installation required, just download [latest release of openM++](https://github.com/openmpp/main/releases/latest), unpack it into any directory and start `oms.exe`:
 
-Windows: double click on `C:\my-openmpp-release\bin\ompp_ui.bat'
+Windows: double click on `C:\my-openmpp-release\bin\ompp_ui.bat`
+
 Linux: open in terminal (or double click on): `~/my-openmpp-release/bin/ompp_ui_linux.sh`
+
 MacOS: double click on: `~/my-openmpp-release/bin/ompp_ui_mac.command`
+
 Linux / MacOS command line:
 ```
 cd ~/my-openmpp-release
